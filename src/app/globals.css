@@ -1,8 +1,29 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f3efe9;
+  --foreground: #2a1518;
+
+  /* Palet maroon utama aplikasi */
+  --color-maroon-950: #3c0f1c;
+  --color-maroon-900: #4d1220;
+  --color-maroon-800: #611626;
+  --color-maroon-700: #7a1f2e;
+  --color-maroon-600: #93293a;
+  --color-maroon-100: #f6e3e6;
+  --color-maroon-50: #fdf5f6;
+
+  --color-cream: #f3efe9;
+  --color-cream-dark: #e7e0d6;
+
+  /* Status */
+  --color-status-unpaid: #a6233a;
+  --color-status-unpaid-bg: #fbe6e9;
+  --color-status-partial: #a97a17;
+  --color-status-partial-bg: #fdefc8;
+  --color-status-paid: #2f7d4f;
+  --color-status-paid-bg: #e2f3e8;
+  --color-status-overdue: #d97706;
 }
 
 @theme inline {
@@ -10,17 +31,33 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-maroon-950: var(--color-maroon-950);
+  --color-maroon-900: var(--color-maroon-900);
+  --color-maroon-800: var(--color-maroon-800);
+  --color-maroon-700: var(--color-maroon-700);
+  --color-maroon-600: var(--color-maroon-600);
+  --color-maroon-100: var(--color-maroon-100);
+  --color-maroon-50: var(--color-maroon-50);
+
+  --color-cream: var(--color-cream);
+  --color-cream-dark: var(--color-cream-dark);
+
+  --color-status-unpaid: var(--color-status-unpaid);
+  --color-status-unpaid-bg: var(--color-status-unpaid-bg);
+  --color-status-partial: var(--color-status-partial);
+  --color-status-partial-bg: var(--color-status-partial-bg);
+  --color-status-paid: var(--color-status-paid);
+  --color-status-paid-bg: var(--color-status-paid-bg);
+  --color-status-overdue: var(--color-status-overdue);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-maroon-600) transparent;
 }
